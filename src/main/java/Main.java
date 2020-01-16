@@ -40,9 +40,39 @@ public class Main {
 
                 if (chosenPlanet.isColonized()) {
                     // handle colonized planet
-                    Printer.printCapturedPlanetOptions(chosenPlanet);
+                    boolean goBack = false;
+
+                    while (!goBack) {
+                        Printer.printCapturedPlanetOptions(chosenPlanet);
+                        int j = scanner.nextInt();
+
+                        switch (j) {
+                            case 1:
+                                Printer.printPlanetResources(chosenPlanet);
+                                break;
+                            case 2:
+                                Printer.printPlanetProductionBuildings(chosenPlanet);
+                                break;
+                            case 3:
+                                Printer.printProductionBuildingsUpgradePrices(chosenPlanet);
+                                break;
+                            case 4:
+                                Printer.printEmpireInfo(empire);
+                                break;
+                            case 5:
+                                // TODO: handle upgrade
+                                System.out.println("Not implemented");
+                                break;
+                            case 0:
+                                goBack = true;
+                                break;
+                            default:
+                                System.out.println("Wrong option");
+                        }
+                    }
                 } else {
                     // handle not colonized planet
+                    Printer.printPlanetResources(chosenPlanet);
                     Printer.printPlanetCaptureCost(chosenPlanet);
                     Printer.printWantToColonize();
 
