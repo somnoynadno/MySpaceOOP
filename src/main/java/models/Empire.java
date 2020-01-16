@@ -37,6 +37,7 @@ public class Empire {
             resources.get(i).decrease(captureCost.get(i).getAmount());
         }
         planet.setColonized();
+        colonizedPlanets.add(planet);
     }
 
     public boolean checkCanBuyBuilding(ProductionBuilding building) {
@@ -55,9 +56,5 @@ public class Empire {
 
     public Vector<Planet> getColonizedPlanets() {
         return colonizedPlanets;
-    }
-
-    public void addPlanet(Planet planet) {
-        colonizedPlanets.add(planet);
     }
 }

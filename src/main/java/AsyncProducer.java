@@ -20,7 +20,12 @@ public class AsyncProducer implements Runnable {
                 if (planet.isColonized()) {
                     for (int i = 0; i < planet.getProductionBuildings().size(); i++) {
                         Integer amount = planet.getProductionBuildings().get(i).getLevel();
-                        empire.getResources().get(i).increase(amount);
+                        // check for inner resources
+                        if (planet.getInnerResources().get(i).getAmount() > amount){
+                            // add only if you have enough
+                            planet.getInnerResources().get(i).decrease(amount);
+                            empire.getResources().get(i).increase(amount);
+                        }
                     }
                 }
             }
