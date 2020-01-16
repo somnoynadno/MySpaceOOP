@@ -24,9 +24,12 @@ public class Main {
         scanner = new Scanner(System.in);
         boolean exit = false;
 
+        Thread t = new Thread(new AsyncProducer(planets, empire));
+        t.start();
+
         while (!exit) {
             Printer.printEmpireInfo(empire);
-            Printer.printPlanets(planets);
+            Printer.printEnumeratedPlanets(planets);
 
             int i = scanner.nextInt();
 
@@ -60,8 +63,20 @@ public class Main {
                                 Printer.printEmpireInfo(empire);
                                 break;
                             case 5:
-                                // TODO: handle upgrade
-                                System.out.println("Not implemented");
+                                //  handle upgrade
+                                Printer.printEnumeratedResourceTypes();
+                                int k = scanner.nextInt();
+
+                                if (k <= chosenPlanet.getProductionBuildings().size()) {
+                                    if (empire.checkCanBuyBuilding(chosenPlanet.getProductionBuildings().get(k-1))) {
+                                        chosenPlanet.getProductionBuildings().get(k-1).upgrade();
+                                        System.out.println("Upgraded!");
+                                    } else {
+                                        System.out.println("Not enough resources!");
+                                    }
+                                } else {
+                                    System.out.println("Wrong option!");
+                                }
                                 break;
                             case 0:
                                 goBack = true;

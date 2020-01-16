@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd85633d-2968-4025-ab9c-84d210d253ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AsyncProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Empire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Empire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Planet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/ProductionBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/ProductionBuilding.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Printer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Planet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Planet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Empire.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Empire.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/models/ProductionBuilding.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/ProductionBuilding.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,25 +92,29 @@
       <screen x="50" y="27" width="1550" height="873" />
     </state>
     <state x="283" y="120" width="1084" height="777" key="#com.intellij.execution.impl.EditConfigurationsDialog/50.27.1550.873@50.27.1550.873" timestamp="1579168149714" />
-    <state width="1504" height="219" key="GridCell.Tab.0.bottom" timestamp="1579176356379">
+    <state width="1504" height="298" key="GridCell.Tab.0.bottom" timestamp="1579179838211">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1504" height="219" key="GridCell.Tab.0.bottom/50.27.1550.873@50.27.1550.873" timestamp="1579176356379" />
-    <state width="1504" height="219" key="GridCell.Tab.0.center" timestamp="1579176356379">
+    <state width="1504" height="298" key="GridCell.Tab.0.bottom/50.27.1550.873@50.27.1550.873" timestamp="1579179838211" />
+    <state width="1504" height="298" key="GridCell.Tab.0.center" timestamp="1579179838210">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1504" height="219" key="GridCell.Tab.0.center/50.27.1550.873@50.27.1550.873" timestamp="1579176356379" />
-    <state width="1504" height="219" key="GridCell.Tab.0.left" timestamp="1579176356378">
+    <state width="1504" height="298" key="GridCell.Tab.0.center/50.27.1550.873@50.27.1550.873" timestamp="1579179838210" />
+    <state width="1504" height="298" key="GridCell.Tab.0.left" timestamp="1579179838209">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1504" height="219" key="GridCell.Tab.0.left/50.27.1550.873@50.27.1550.873" timestamp="1579176356378" />
-    <state width="1504" height="219" key="GridCell.Tab.0.right" timestamp="1579176356379">
+    <state width="1504" height="298" key="GridCell.Tab.0.left/50.27.1550.873@50.27.1550.873" timestamp="1579179838209" />
+    <state width="1504" height="298" key="GridCell.Tab.0.right" timestamp="1579179838210">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
-    <state width="1504" height="219" key="GridCell.Tab.0.right/50.27.1550.873@50.27.1550.873" timestamp="1579176356379" />
+    <state width="1504" height="298" key="GridCell.Tab.0.right/50.27.1550.873@50.27.1550.873" timestamp="1579179838210" />
     <state x="308" y="40" width="1024" height="845" key="SettingsEditor" timestamp="1579168378985">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
     <state x="308" y="40" width="1024" height="845" key="SettingsEditor/50.27.1550.873@50.27.1550.873" timestamp="1579168378985" />
+    <state x="488" y="212" width="672" height="678" key="search.everywhere.popup" timestamp="1579178354645">
+      <screen x="50" y="27" width="1550" height="873" />
+    </state>
+    <state x="488" y="212" width="672" height="678" key="search.everywhere.popup/50.27.1550.873@50.27.1550.873" timestamp="1579178354645" />
   </component>
 </project>

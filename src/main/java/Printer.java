@@ -12,7 +12,7 @@ public final class Printer {
         System.out.println();
     }
 
-    public static void printPlanets(Vector<Planet> planets) {
+    public static void printEnumeratedPlanets(Vector<Planet> planets) {
         System.out.println("Choose your planet:");
 
         int i = 1;
@@ -25,6 +25,14 @@ public final class Printer {
             System.out.println();
         }
         System.out.println("...or type '0' to exit");
+    }
+
+    public static void printEnumeratedResourceTypes() {
+        int i = 1;
+        for (ResourceType rt : ResourceType.values()) {
+            System.out.println(String.format("[%d] %s", i, rt));
+            i += 1;
+        }
     }
 
     public static void printPlanetCaptureCost(Planet planet) {
@@ -74,7 +82,7 @@ public final class Printer {
         System.out.println("Buildings:");
         for (ProductionBuilding building : planet.getProductionBuildings()) {
             System.out.println();
-            System.out.print(String.format("%s building upgrade to level %d cost:", building.getType(), building.getLevel()));
+            System.out.print(String.format("%s building upgrade to level %d cost:", building.getType(), building.getLevel() + 1));
             System.out.println();
             for (Resource resource : building.getUpgradePrices()) {
                 System.out.print(String.format("%s:%d ", resource.getType(), resource.getAmount()));

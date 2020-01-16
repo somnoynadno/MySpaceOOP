@@ -21,6 +21,7 @@ public class Planet {
     public Planet(PlanetName planetName) {
         name = planetName;
         colonized = false;
+        productionBuildings = new Vector<>();
 
         captureCost = new Vector<>();
         for (ResourceType resType : ResourceType.values()) {
@@ -51,7 +52,6 @@ public class Planet {
 
     public void setColonized() {
         colonized = true;
-        productionBuildings = new Vector<>();
 
         for (ResourceType rt : ResourceType.values()) {
             productionBuildings.add(new ProductionBuilding(rt));

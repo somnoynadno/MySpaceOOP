@@ -39,6 +39,16 @@ public class Empire {
         planet.setColonized();
     }
 
+    public boolean checkCanBuyBuilding(ProductionBuilding building) {
+        Vector<Resource> upgradePrices = building.getUpgradePrices();
+        for (int i = 0; i < upgradePrices.size(); i++) {
+            if (upgradePrices.get(i).getAmount() > resources.get(i).getAmount()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public Vector<Resource> getResources() {
         return resources;
     }
